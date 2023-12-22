@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Source Code Pro', monospace;
+}
+
+body {
+    background-color:  #1b1f22 ;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+        
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .clock {
+    display: flex;
+    align-items: baseline;
+    font-size: 3.4em;
+    color: whitesmoke;
+}
+
+.hours {
+    color: #dc7633;
+    text-shadow: 4px 4px 1px white;
+}
+
+.seconds {
+    text-shadow: 2px 2px 1px #f7dc6f;
+}
+
+.date {
+    font-weight: bold;
+    color: gray;
+    padding: 0.5em 5em;
+}

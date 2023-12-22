@@ -1,0 +1,11 @@
+{
+    "AppVersion": "0.5.0",
+    "Title": "Focus",
+    "Desc": "A clock with sound and music for focus",
+    "Author": "MK",
+    "Contact": "https://github.com/01-MartinK",
+    "Type": 1,
+    "FileName": "index.html",
+    "Arguments": null,
+    "IsAbsolutePath": false
+  }
