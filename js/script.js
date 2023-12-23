@@ -1,13 +1,16 @@
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
+const hours_label = document.querySelector('.hours');
+const minutes_label = document.querySelector('.minutes');
+const seconds_label = document.querySelector('.seconds');
+const date_label = document.querySelector('.date').firstChild;
+const secondsContainer = document.querySelector('.secondsContainer');
+const test = document.querySelector('#test');
+
 function update_values() {
     const date = new Date();
-    const hours_label = document.querySelector('.hours');
-    const minutes_label = document.querySelector('.minutes');
-    const seconds_label = document.querySelector('.seconds');
-    const date_label = document.querySelector('.date').firstChild;
-
+    
     hours_label.textContent = checkTime(date.getHours());
     minutes_label.textContent = checkTime(date.getMinutes());
     seconds_label.textContent = checkTime(date.getSeconds());
@@ -23,3 +26,37 @@ function checkTime(i) {
 
 update_values()
 
+function livelyPropertyListener(name, val) {
+
+    //test.textContent += `, ${name}: ${val}`
+
+    switch (name) {
+        case "accentColor":
+            hours_label.style.color = val;
+            break;
+        case "secondaryColor":
+            seconds_label.style.textShadow = `2px 2px 1px ${val}`
+            break;
+        case "showSeconds":
+                if (val == true)
+                    secondsContainer.style.display = "flex";
+                else
+                    secondsContainer.style.display = "none";
+            break;
+        case "playMusic":
+            break;
+        case "playSounds":
+            break;
+    }
+}
+
+function changeCSSStyle(selector, cssProp, cssVal) {
+
+    for (i=0, len=document.styleSheets[ssMain][cssRules].length; i<len; i++) {
+  
+      if (document.styleSheets[ssMain][cssRules][i].selectorText === selector) {
+        document.styleSheets[ssMain][cssRules][i].style[cssProp] = cssVal;
+        return;
+      }
+    }
+  }

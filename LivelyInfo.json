@@ -1,6 +1,7 @@
 {
     "AppVersion": "0.5.0",
     "Title": "Focus",
+    "Thumbnail": "thumbnail.jpg",
     "Desc": "A clock with sound and music for focus",
     "Author": "MK",
     "Contact": "https://github.com/01-MartinK",

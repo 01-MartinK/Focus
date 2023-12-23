@@ -38,8 +38,37 @@ body {
     text-shadow: 2px 2px 1px #f7dc6f;
 }
 
+.secondsContainer {
+    display: flex;
+    transform: translateY(8px);
+}
+
 .date {
     font-weight: bold;
     color: gray;
     padding: 0.5em 5em;
+    animation: appear-bottom both 1s ease-out;
+}
+
+.dots {
+    color: darkgray;
+    animation: blink both 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    0% {opacity: 100%;}
+    40% {opacity: 100%;}
+    50% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+@keyframes appear-bottom {
+    0% {opacity: 0%; transform: translateY(64px);}
+    100% {opacity: 100%; transform: translateY(0);}
+}
+
+@keyframes appear-top {
+    0% {opacity: 0%; transform: translateY(-64px);}
+    100% {opacity: 100%; transform: translateY(0);}
 }
