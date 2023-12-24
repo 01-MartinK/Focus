@@ -6,7 +6,8 @@ const minutes_label = document.querySelector('.minutes');
 const seconds_label = document.querySelector('.seconds');
 const date_label = document.querySelector('.date').firstChild;
 const secondsContainer = document.querySelector('.secondsContainer');
-const test = document.querySelector('#test');
+const debug = document.querySelector('#test');
+const noiseOverlay = document.querySelector('.noise');
 
 function update_values() {
     const date = new Date();
@@ -28,7 +29,7 @@ update_values()
 
 function livelyPropertyListener(name, val) {
 
-    //test.textContent += `, ${name}: ${val}`
+    //debug.textContent += `, ${name}: ${val}`
 
     switch (name) {
         case "accentColor":
@@ -38,14 +39,16 @@ function livelyPropertyListener(name, val) {
             seconds_label.style.textShadow = `2px 2px 1px ${val}`
             break;
         case "showSeconds":
-                if (val == true)
-                    secondsContainer.style.display = "flex";
-                else
-                    secondsContainer.style.display = "none";
+            if (val == true)
+                secondsContainer.style.display = "flex";
+            else
+                secondsContainer.style.display = "none";
             break;
-        case "playMusic":
-            break;
-        case "playSounds":
+        case "showNoise":
+            if (val == true)
+                noiseOverlay.style.display = "block";    
+            else
+                noiseOverlay.style.display = "none";
             break;
     }
 }

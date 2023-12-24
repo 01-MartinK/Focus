@@ -2,7 +2,7 @@
     "accentColor": {
         "type": "color",
         "value": "#dc7633",
-        "text": "Accent color"
+        "text": "Accent Color"
     },
     "secondaryColor": {
         "type": "color",
@@ -14,14 +14,9 @@
         "value": true,
         "text": "Show Seconds"
     },
-    "playMusic": {
+    "showNoise": {
         "type": "checkbox",
-        "value": false,
-        "text": "Play Lofi Music"
-    },
-    "playSounds": {
-        "type": "checkbox",
-        "value": false,
-        "text": "Play sound for the clock"
+        "value": true,
+        "text": "Show background noise"
     }
 }
