@@ -1,6 +1,7 @@
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
+const motivation_label = document.querySelector('#motivationText');
 const hours_label = document.querySelector('.hours');
 const minutes_label = document.querySelector('.minutes');
 const seconds_label = document.querySelector('.seconds');
@@ -37,6 +38,7 @@ function livelyPropertyListener(name, val) {
             break;
         case "secondaryColor":
             seconds_label.style.textShadow = `2px 2px 1px ${val}`
+            motivation_label.style.color = `${val}`
             break;
         case "showSeconds":
             if (val == true)
@@ -49,6 +51,9 @@ function livelyPropertyListener(name, val) {
                 noiseOverlay.style.display = "block";    
             else
                 noiseOverlay.style.display = "none";
+            break;
+        case "motivationText":
+            motivation_label.textContent = val
             break;
     }
 }

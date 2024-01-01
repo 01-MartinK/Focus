@@ -1,12 +1,17 @@
 {
-    "AppVersion": "0.5.0",
-    "Title": "Focus",
-    "Thumbnail": "thumbnail.jpg",
-    "Desc": "A clock with sound and music for focus",
-    "Author": "MK",
-    "Contact": "https://github.com/01-MartinK",
-    "Type": 1,
-    "FileName": "index.html",
-    "Arguments": null,
-    "IsAbsolutePath": false
-  }
+  "AppVersion": "1.0.0.0",
+  "Title": "Focus",
+  "Thumbnail": "ibwgxupe.jpg",
+  "Preview": "n532k4rd.gif",
+  "Desc": "A clock with sound and music for focus",
+  "Author": "MK",
+  "License": null,
+  "Contact": "https://github.com/01-MartinK",
+  "Type": 1,
+  "FileName": "index.html",
+  "Arguments": null,
+  "IsAbsolutePath": false,
+  "Id": null,
+  "Tags": null,
+  "Version": 0
+}

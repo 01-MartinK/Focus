@@ -76,6 +76,11 @@ body {
     animation-iteration-count: infinite;
 }
 
+#motivationText {
+  z-index: 32;
+  color: #dc7633;
+}
+
 .noise {
     position: absolute;
     top: -500px;

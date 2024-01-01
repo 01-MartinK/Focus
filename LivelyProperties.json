@@ -18,5 +18,10 @@
         "type": "checkbox",
         "value": true,
         "text": "Show background noise"
+    },
+    "motivationText": {
+        "type": "textbox",
+        "value": "",
+        "text": "Motivational Text"
     }
 }
