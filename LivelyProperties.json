@@ -23,5 +23,10 @@
         "type": "textbox",
         "value": "",
         "text": "Motivational Text"
+    },
+    "html": {
+        "type": "textbox",
+        "value": "",
+        "text": "HTML"
     }
 }

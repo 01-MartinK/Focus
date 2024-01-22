@@ -9,6 +9,7 @@ const date_label = document.querySelector('.date').firstChild;
 const secondsContainer = document.querySelector('.secondsContainer');
 const debug = document.querySelector('#test');
 const noiseOverlay = document.querySelector('.noise');
+const htmlCont = document.querySelector('#html');
 
 function update_values() {
     const date = new Date();
@@ -54,6 +55,9 @@ function livelyPropertyListener(name, val) {
             break;
         case "motivationText":
             motivation_label.textContent = val
+            break;
+        case "html":
+            htmlCont.innerHTML = val
             break;
     }
 }
