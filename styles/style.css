@@ -79,10 +79,6 @@ body {
 #motivationText {
   z-index: 32;
   color: #dc7633;
-  text-align: left;
-  text-wrap: wrap;
-  line-break: normal;
-  width: 16em;
 }
 
 .noise {

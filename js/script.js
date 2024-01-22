@@ -9,7 +9,7 @@ const date_label = document.querySelector('.date').firstChild;
 const secondsContainer = document.querySelector('.secondsContainer');
 const debug = document.querySelector('#test');
 const noiseOverlay = document.querySelector('.noise');
-const htmlCont = document.querySelector('#html');
+const htmlCont = document.querySelector('#hs');
 
 function update_values() {
     const date = new Date();
